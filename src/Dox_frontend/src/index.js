@@ -1,6 +1,6 @@
 import { Dox_backend } from "../../declarations/Dox_backend";
 
-var a = prompt("Tera naam bta kya hai?? ");
+var a = prompt(" ENTER THE NAME OF THE PLAYER!! ");
 
 var b = document.getElementById("playername");
 b.textContent = await Dox_backend.enterName(a);
@@ -283,8 +283,8 @@ var map = {
   scripts: {
     change_colour:
       'game.player.colour = "#"+(Math.random()*0xFFFFFF<<0).toString(16);',
-    next_level: 'alert("FIANLLY! JEET HI GYA! But ab game khatam hogyi,,                                              MAP RELOADINGGGG................");game.load_map(map);',
-    death: 'alert("BYE! BYE! khatam! tata! goodbye! gyaA! ");game.load_map(map);',
+    next_level: 'alert("FINALLY! YOU WON!!     LEVEL COMPLETED         MAP RELOADINGGGG................");game.load_map(map);',
+    death: 'alert("AHH SHIT!! HERE YOU GO AGAIN!!   WASTED!!!!!!(dead) ");game.load_map(map);',
     unlock:
       'game.current_map.keys[10].solid = 0;game.current_map.keys[10].colour = "#888";',
   },
